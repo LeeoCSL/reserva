@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundo"
+                android:focusable="true" android:focusableInTouchMode="true">
+
+    <include
+            android:id="@+id/tb"
+            layout="@layout/toolbar" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tb">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tb"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+
+            <EditText
+                    android:id="@+id/et_restaurant_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Nome do restaurante"
+                    android:inputType="text"
+                    android:maxLines="1"
+
+            />
+
+            <EditText
+                    android:id="@+id/et_restaurant_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+
+            />
+
+
+            <EditText
+                    android:id="@+id/et_restaurant_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Endereço"
+                    android:inputType="text"
+                    android:maxLines="1"
+
+            />
+
+            <EditText
+                    android:id="@+id/et_restaurant_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Telefone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:maxLength="11"
+
+            />
+
+
+            <EditText
+                    android:id="@+id/et_restaurant_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyz1234567890"
+                    android:hint="Senha"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
+            <EditText
+                    android:id="@+id/et_restaurant_password_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyz1234567890"
+                    android:hint="Repita a Senha"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/btn_register_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:onClick="handlerRequest"
+            android:text="Criar conta" />
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundo"
+                android:focusable="true" android:focusableInTouchMode="true">
+
+    <include
+            android:id="@+id/tb"
+            layout="@layout/toolbar"
+    />
+
+
+    <LinearLayout
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_register"
+            android:layout_below="@+id/tb">
+
+
+        <ImageView
+                android:src="@drawable/reserva3"
+                android:layout_width="300dp"
+                android:layout_height="150dp" />
+
+        <EditText
+                android:hint="Email"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="8dp"
+                android:id="@+id/input_email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_white_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+        />
+
+        <EditText
+                android:hint="Senha"
+                android:id="@+id/input_password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input_white_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <Button
+                android:text="Login"
+                android:id="@+id/btn_login"
+                android:onClick="handlerUserLogin"
+                android:background="@drawable/btn_border"
+
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:text="Esqueceu sua senha?"
+                android:layout_marginTop="12dp"
+                android:onClick="forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fundo_botao"
+            android:onClick="registrar"
+            android:text="Não tem conta? Registre-se"
+
+            android:textSize="10sp" />
+
+</RelativeLayout>

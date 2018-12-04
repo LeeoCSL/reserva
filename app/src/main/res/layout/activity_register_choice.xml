@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="leonardoribeiro.reservafacil.activity.RegisterChoice"
+                android:background="@color/fundo"
+                android:orientation="vertical">
+
+    <include
+            android:id="@+id/tb"
+            layout="@layout/toolbar"
+    />
+
+    <LinearLayout
+            android:layout_below="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp"
+            android:orientation="vertical"
+
+    >
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Como deseja se cadastrar?"
+                android:textSize="24sp"
+                android:textStyle="bold"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borda_choice"
+                android:onClick="RegisterUser">
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_avatar_masc"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Desejo me cadastrar como um cliente e poder reservar mesas pelo aplicativo :D"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="#000000"/>
+
+            <TextView
+                    android:text="OU"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <View
+
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borda_choice"
+                android:onClick="RegisterRestaurant">
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_icone_restaurante"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Tenho um restaurante e quero que usuarios possam revervar mesas pelo app :D"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fundo_botao"
+            android:onClick="voltar"
+            android:text="Já tenho cadastro"
+
+            android:textSize="15sp" />
+</RelativeLayout>

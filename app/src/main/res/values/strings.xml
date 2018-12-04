@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ReservaFacil</string>
+    <string name="title_activity_drawer">drawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+    <string name="name_field_empty">O campo nome está vazio.</string>
+    <string name="invalid_telephone">Telefone inválido.</string>
+    <string name="your_password_needs_more_caracters">Sua senha deve ter no mínimo 6 caracteres.</string>
+    <string name="invalid_email">Email inválido.</string>
+    <string name="enter">Entrando</string>
+    <string name="validating_information">Estamos validando suas informações, por favor, aguarde.</string>
+    <string name="email_already_used_with_facebook_account">Este email está vinculado a uma outra conta com o
+        facebook.
+    </string>
+    <string name="title_activity_main2_restaurant">Main2ActivityRestaurant</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "302162735327",
+    "firebase_url": "https://reserva-d4068.firebaseio.com",
+    "project_id": "reserva-d4068",
+    "storage_bucket": "reserva-d4068.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302162735327:android:52239bc1fa449db4",
+        "android_client_info": {
+          "package_name": "rafael.reserva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302162735327-0gnjh5hglnt4frukfdrfkfia7vokr7ss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOi-5E8o0_dt3YK5LccXoWq4aSKDuFxN0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

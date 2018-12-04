@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffad2b</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fundo">#ffe7cd</color>
+    <color name="fundo_botao">#ff9c00</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="gray">#F1F5F8</color>
+    <color name="laranja">#ffad2b</color>
+    <color name="laranja2">#ffe7cd</color>
+    <color name="laranja3">#f9c081</color>
+</resources>
